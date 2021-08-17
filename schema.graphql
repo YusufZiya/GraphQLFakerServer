@@ -1,0 +1,16 @@
+type Employee {
+  id: ID
+  firstName: String @fake(type: firstName, locale: tr)
+  lastName: String @fake(type: lastName, locale: tr)
+  email: String @fake(type: email, locale: tr)
+  address: String @fake(type: streetAddress, options: { useFullAddress: true })
+  phone: String @fake(type: phoneNumber, locale: tr)
+  position: String @fake(type: jobTitle, locale: tr)
+  score: Int
+  image: String @fake(type: imageUrl, options: { imageKeywords: ["person"] })
+}
+
+type Query {
+  employee(id: ID): Employee
+  allEmployees: [Employee]
+}

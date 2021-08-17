@@ -1,0 +1,15 @@
+{
+  "name": "GraphQLFakerServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "graphql-faker --port 4000 ./schema.graphql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "graphql-faker": "^2.0.0-rc.25"
+  }
+}
